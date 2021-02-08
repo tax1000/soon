@@ -134,6 +134,10 @@ body {
   #subscribeModal .form-control:focus {
     border-color: #49506a; }
 
+.box {
+	padding: 100px 15%;
+}
+
 /*
  * Affix and center
  */

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untitled Document</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="box">
+	<form action="contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Votre Nom" data-rule="minlen:4" data-msg="Veuillez entrer au minimum 4 caractères" />
+                  <div class="validate">Veuillez entrer au minimum 4 caractères</div>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Votre Email" data-rule="email" data-msg="Veuillez entrer une adresse valide" />
+                  <div class="validate">Veuillez entrer une adresse valide</div>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Objet" data-rule="minlen:4" data-msg="Veuillez entrer au minimum 8 caractères" />
+                <div class="validate">Veuillez entrer au minimum 8 caractères</div>
+      </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Veuillez entrer un message" placeholder="Votre Message"></textarea>
+                <div class="validate">Veuillez entrer un message pour nous</div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Envoi en cours</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Votre message a été envoyé. Merci!</div>
+              </div>
+              <div class="text-center">
+                <button type="submit">Envoyer</button></div>
+</form>
+
+</body>
+	<script src="js/main.js"></script>
+	<script src="js/validate.js"></script>
+</html>
